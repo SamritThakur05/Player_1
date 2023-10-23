@@ -78,7 +78,7 @@
                 width: 40%;
                 height: 150px;
                 float: right;
-                margin-right: -69px;
+                margin-right: 2px;
             }
             #instructions
             {
@@ -114,12 +114,38 @@
                 left:10%;
                 visibility: hidden;
             }
-            @media screen and (max-width: 850px)
+            @media screen and (max-width: 1050px)
             {
-                #pj1
+                
+              
+                #yellow
                 {
-                    visibility: visible;
-                    top:40%
+                    height: 80px;
+                   margin-right: 5px;
+                   
+                }
+                #form
+                {
+                    right:4px
+                }
+                #instructions
+                {
+                    font-size: 18px;
+                    width : 30%;
+                    left : 30%;
+                    top:10%;
+                    font-weight: 700;
+                    font-family:'Times New Roman', Times, serif;
+                }
+                #waiting
+                {
+                    font-size: 19px;
+                    position: absolute;
+                    word-wrap: none;
+                    top:90%;
+                    left:29%;
+
+
                 }
             }
             @media screen and (max-width: 350px)
@@ -129,14 +155,22 @@
                     visibility: visible;
                     top:45%
                 }
+                #yellow
+                {
+                    height: 80px;
+                   margin-right: -17px;
+                   
+                }
+                
             }
 
           
-            @media screen and (max-width: 900px)
+            @media screen and (max-width: 800px)
             {
+                
                 #player_bg
                 {
-                    width:97%;
+                    width:98%;
                     height:99%;
                 }
                 #waiting
@@ -159,7 +193,7 @@
                     font-family:'Times New Roman', Times, serif;
                 }
                 body{
-                    overflow: hidden;
+                    overflow-y: scroll;
 
                 }
                 #logo{
@@ -190,7 +224,11 @@
                 {
                     visibility: hidden;
                 }
-               
+                #pj1
+                {
+                    visibility: visible;
+                    top:45%
+                }
                 #form
                 {
                     width : 90%;

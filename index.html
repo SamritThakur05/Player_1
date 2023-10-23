@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: linear-gradient(180deg, #FF9100 0%, #FFAE15 100%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow-x: hidden;
+            overflow-y: hidden;
+           
+        }
+        #player_bg
+        {
+            width: 99%;
+            height: 99%;
+            left: 5px;
+            top: 3px;
+            position: absolute;
+            background: white;
+            border-radius: 20px
+        }
+        #form
+        {
+           
+            width : 40%;
+            position: absolute;
+            top : 25%;
+            right:-4%
+        }
+        #player1_name , #player2_name, #player3_name, #player4_name, #player5_name
+        {
+                text-align: center;
+                color: black;
+                font-size: 18px;
+                font-family: Mochiy Pop One;
+                font-weight: 400;
+                background: #FEFEFE;
+                border-radius: 20px;
+                border: 1px black solid;
+                width: 75%;
+                height: 39px;
+               
+            }
+            #pj
+            {
+               
+                color: black;
+                font-size: 25px;
+                font-family: Californian FB;
+                font-weight: 700;
+                text-align: center;
+                
+            }
+            #man
+            {
+                width: 400px;
+                height: 580px;
+                left: -23px;
+                top: 5%;
+                position: absolute
+            }
+            #logo
+            {
+                width: 200px;
+                height: 60px;
+                left: 8px;
+                top: 15px;
+                position: absolute
+            }
+            #yellow
+            {
+                width: 40%;
+                height: 150px;
+                float: right;
+                margin-right: -69px;
+            }
+            #instructions
+            {
+                width :34% ;
+                position: absolute;
+                top : 17%;
+                left:30%;
+                color: black;
+                font-size: 22px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 500;
+                word-wrap: break-word   
+            }
+            #waiting
+            {
+                position: absolute;
+                top : 84%;
+                left:30%;
+                color: black;
+                font-size: 28px;
+                font-family: Orbitron;
+                font-weight: 700;
+                word-wrap: break-word;
+            }
+            #br
+            {
+                visibility: visible;
+            }
+            #pj1
+            {
+                position: absolute;
+                top:42%;
+                left:10%;
+                visibility: hidden;
+            }
+            @media screen and (max-width: 850px)
+            {
+                #pj1
+                {
+                    visibility: visible;
+                    top:40%
+                }
+            }
+            @media screen and (max-width: 350px)
+            {
+                #pj1
+                {
+                    visibility: visible;
+                    top:45%
+                }
+            }
+
+          
+            @media screen and (max-width: 900px)
+            {
+                #player_bg
+                {
+                    width:100%;
+                    height:100%;
+                }
+                #waiting
+                {
+                    font-size: 17px;
+                    position: absolute;
+                    word-wrap: none;
+                    top:90%;
+                    left:12%;
+
+
+                }
+                #instructions
+                {
+                    font-size: 12px;
+                    width : 67%;
+                    left : 30%;
+                    top:10%;
+                    font-weight: 700;
+                    font-family:'Times New Roman', Times, serif;
+                }
+                body{
+                    overflow-y: visible;
+
+                }
+                #logo{
+                    width:100px;
+                    height : auto;
+                }
+                #man
+                {
+                    width: 200px;
+                    height: 310px;
+                    left: -12px;
+                }
+                #yellow
+                {
+                    height: 80px;
+                    margin-right: -14px;
+                }
+               
+                #player1_name , #player2_name, #player3_name, #player4_name, #player5_name
+                {
+                    font-size: 12px;
+                    width: 75%;
+                    height: 25px;
+                    
+                }
+                #pj
+                {
+                    visibility: hidden;
+                }
+               
+                #form
+                {
+                    width : 100%;
+                    position: relative;
+                    top : 30%;
+                    left:5%
+                }
+                #br{
+                    visibility: hidden;
+                }
+
+            }
+    </style>
+</head>
+<body>
+    
+
+    <div id = "player_bg">
+        <img id ="logo"  src="Logo.png" />
+              
+        <img id = "man" src="man.png" />
+
+        <img id ="yellow"  src="yellow.png" />
+        
+        <p id = "pj1"><b>• Players joined </b> </p> <br>
+       <div id = "form"> 
+            
+                <p id = "pj"><b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Players joined •</b> </p> <br>
+                <b style="font-size: 20px;" id = "first_tb"> 1. &nbsp </b> <input type="text" placeholder="Player 1 name" id="player1_name" disabled><br><br>
+                <b style="font-size: 20px;" id = "second_tb"> 2. &nbsp </b> <input type="text" placeholder="Player 2 name" id="player2_name" disabled><br><br>
+                <b style="font-size: 20px;" id = "third_tb"> 3. &nbsp </b> <input type="text" placeholder="Player 3 name" id="player3_name" disabled><br><br>
+                <b style="font-size: 20px;" id = "fourth_tb"> 4. &nbsp </b> <input type="text" placeholder="Player 4 name" id="player4_name" disabled><br><br>
+                <b style="font-size: 20px;" id = "fifth_tb"> 5. &nbsp </b> <input type="text" placeholder="Player 5 name" id="player5_name" disabled><br><br>
+            
+    
+     </div>      
+      
+       
+            <p id="waiting">Waiting for the host to start .....</p>
+       
+            
+        
+            <span id="instructions" ><b>Instructions</b> <br/><br/>
+           <b>•</b> Their will be 10 Multiple Choice Questions.<br/><span id="br"><br/></span><b>•</b>Read questions carefully and answer correct.<br/><span id="br"><br/></span><b>•</b>Their will be a fixed time set for each question.<br/><span id="br"><br/></span><b>•</b>For every questions points will awarded.<br/><span id="br"><br/></span><b>•</b>leader board will be display on projector.<br/>
+            </span>
+    
+        
+        
+    </div>
+
+</body>
+</html>
